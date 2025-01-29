@@ -83,6 +83,25 @@ $ rabbitmqadmin get queue='hello'
 
 **Ответ:**  
 
+Скриншоты из веб-интерфейса с информацией о доступных нодах в кластере и включённой политикой:  
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/008.png)  
+
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/009.png)  
+
+Вывод команды *$ rabbitmqctl cluster_status* с двух нод:
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/010.png)  
+
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/011.png)  
+
+Выполнение команды *$ rabbitmqadmin get queue='hello'* на каждой из нод:
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/012.png)  
+
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/013.png)  
+
+После чего попробуйте отключить одну из нод, желательно ту, к которой подключались из скрипта, затем поправьте параметры подключения в скрипте consumer.py на вторую ноду и запустите его. 
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/014.png)  
+ 
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/015.png)  
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
