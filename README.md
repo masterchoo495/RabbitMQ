@@ -6,6 +6,7 @@
 *Итогом выполнения домашнего задания будет приложенный скриншот веб-интерфейса RabbitMQ.*
 
 **Ответ:**  
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/001.png)
 
 ---
 
@@ -29,6 +30,21 @@ $ pip install pika
 Для закрепления материала можете попробовать модифицировать скрипты, чтобы поменять название очереди и отправляемое сообщение.
 
 **Ответ:**  
+Для отправки сообщений необходимо запустить скрипт producer.py.  
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/002.png)  
+
+Зайдите в веб-интерфейс, найдите очередь под названием hello и сделайте скриншот.  
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/003.png)  
+
+После чего запустите второй скрипт consumer.py и сделайте скриншот результата выполнения скрипта. Скрипт в том виде, в котором он был предоставлен, выдавал ошибки:  
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/004.png)  
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/005.png)  
+
+Потребовалась правка двух аргументов функции basic_consume:  
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/006.png)  
+
+Скрипт consumer.py заработал:  
+![alt text](https://github.com/masterchoo495/RabbitMQ/blob/main/007.png)
 
 ---
 
